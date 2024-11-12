@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/add-emp-form-styles.css">
+    <title>Add Employee</title>
+</head>
+
+<body>
+    <div class="h-full w-full">
+        <div class="h-20">
+            <iframe src="../html/base.html" frameborder="0" width="100%" height="75"></iframe>
+        </div>
+        <div class=" w-full mt-3 flex justify-center">
+            <div class="w-2/3 flex justify-center bg-white h-full rounded-md">
+                <div class="w-4/5 gap-6 flex flex-col">
+                    <h4 class="mt-6 font-bold text-gray-600">Employee Payroll Form</h4>
+
+                    <div class="">
+                        <label class="inline-block w-1/4" for="name">Name</label>
+                        <input class="h-10 w-2/3 focus:outline-none rounded border border-gray-300" type="text"
+                            id="name" name="name" placeholder="Enter Name">
+                    </div>
+
+                    <div class=" flex items-center">
+                        <label class="inline-block w-1/4" for="profile">Profile Image</label>
+                        <div class="w-3/5 flex gap-14" id="profile-ctn"></div>
+                    </div>
+
+                    <div class=" flex items-center">
+                        <label class="inline-block w-1/4" for="gender">Gender</label>
+                        <div class="flex gap-16" id="gender-ctn"></div>
+                    </div>
+
+                    <div class=" flex items-center">
+                        <label class="inline-block w-1/4" for="department">Department</label>
+                        <div class="flex gap-9" id="dept-ctn"></div>
+                    </div>
+
+                    <div class="flex items-center w-full">
+                        <label class="inline-block w-1/4" for="salary">Salary</label>
+                        <div class="w-3/5 flex items-center justify-between">
+                            <input class="w-4/5" type="range" id="salary" name="salary" min="10000" max="100000"
+                                step="1000" value="50000">
+                            <output id="salary-output" for="salary">50000</output>
+                        </div>
+                    </div>
+
+                    <div class=" flex items-center">
+                        <label class="inline-block w-1/4" for="startDate">Start Date</label>
+                        <div class="flex gap-10 w-3/5" id="date">
+                            <select class="border border-gray-300 w-1/5" id="year" name="Year">
+                                <option value="">Year</option>
+                            </select>
+                            <select class="border border-gray-300 w-1/5" id="month" name="Month">
+                                <option value="">Month</option>
+                            </select>
+                            <select class="border border-gray-300 w-1/5" id="day" name="Day">
+                                <option value="">Day</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class=" flex items-start">
+                        <label class="inline-block w-1/4" for="notes">Notes</label>
+                        <textarea class="resize-none w-2/3 h-20 focus:outline-none rounded border border-gray-300"
+                            id="notes" name="notes" placeholder="Comments"></textarea>
+                    </div>
+
+                    <div class="flex items-center justify-between pr-14">
+                        <div class=""><a id="cancelButton" href="../html/employee-list.html"><button
+                                    class="w-28 h-8 bg-gray-200 border border-gray rounded">Cancel</button></a>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="w-28 h-8 bg-gray-200 border border-gray rounded" id="submit">Submit</button>
+                            <button class="w-28 h-8 bg-gray-200 border border-gray rounded" type="reset"
+                                id="reset">Reset</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script defer src="../js/add-emp.js"></script>
+</body>
+
+</html>
