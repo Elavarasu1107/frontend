@@ -231,9 +231,9 @@ $(window).on('load', () => {
 		addEmployee()
 	})
 
-	// let resetBtnRef = document.getElementById('reset')
-	// resetBtnRef.addEventListener('click', e => {
-	// 	e.preventDefault()
-	// 	resetValues()
-	// })
+	let resetBtnRef = document.getElementById('reset')
+	resetBtnRef.addEventListener('click', e => {
+		e.preventDefault()
+		resetValues()
+	})
 })
