@@ -10,11 +10,11 @@ $(window).on('load', () => {
 			type: 'radio',
 			id: `profile${prof}`,
 			name: `profile`,
-			value: `assets/Profile/profile${prof}.png`,
+			value: `assets/profile/profile${prof}.png`,
 		})
 
 		const $img = $('<img>', {
-			src: `assets/Profile/profile${prof}.png`,
+			src: `assets/profile/profile${prof}.png`,
 			id: `image${prof}`,
 			alt: `image${prof}`,
 		})
