@@ -198,7 +198,7 @@ $(window).on('load', () => {
 		})
 
 		addItemToLocalStorage(data)
-		// resetValues()
+		resetValues()
 	}
 
 	PROPS.salary.on('input', e => {
