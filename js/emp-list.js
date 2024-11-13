@@ -114,18 +114,18 @@ for (let i = 0; i < empListLength; i++) {
 
 	const $imgUpdateRef = $('<img>', {
 		class: 'h-4 w-4 cursor-pointer',
-		src: '/assets/pen.png',
+		src: 'assets/pen.png',
 		alt: 'edit',
 		id: emp.id,
 	})
 
 	$imgUpdateRef.click(() => {
-		window.location.href = `/docs/add-emp.html?id=${emp.id}`
+		window.location.href = `add-emp.html?id=${emp.id}`
 	})
 
 	const $imgDeleteRef = $('<img>', {
 		class: 'h-4 w-4 cursor-pointer',
-		src: '/assets/delete.png',
+		src: 'assets/delete.png',
 		alt: 'delete',
 		id: emp.id,
 	})

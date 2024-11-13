@@ -165,7 +165,7 @@ $(window).on('load', () => {
 		localStorage.setItem(key, data)
 	}
 
-	const resetValues = () => {
+	function resetValues() {
 		// Reset text and number inputs
 		PROPS.name.val('')
 		PROPS.salary.val(50000)
@@ -231,9 +231,9 @@ $(window).on('load', () => {
 		addEmployee()
 	})
 
-	let resetBtnRef = document.getElementById('reset')
-	resetBtnRef.addEventListener('click', e => {
-		e.preventDefault()
-		resetValues()
-	})
+	// let resetBtnRef = document.getElementById('reset')
+	// resetBtnRef.addEventListener('click', e => {
+	// 	e.preventDefault()
+	// 	resetValues()
+	// })
 })
